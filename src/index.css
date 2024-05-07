@@ -1,13 +1,78 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #c2c2d6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 294px;
+  border: 2px solid #47476b;
+  padding: 5px;
+  position: relative;
+  background: black;
+}
+
+.formula {
+  min-height: 20px;
+  width: 100%;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.outputScreen {
+  width: 100%;
+  font-size: 29px;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+}
+
+.btn {
+  position: relative;
+  width: 70px;
+  height: 65px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  outline: 1px solid black;
+  background: #4d4d4d;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.btn:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+
+.clear-btn {
+  background: #ac3939;
+  width: 140px;
+}
+
+.equals-btn {
+  background: #004466;
+  height: 130px;
+  position: absolute;
+}
+
+.operator {
+  background: rgb(102, 102, 102);
+}
+
+.zero {
+  width: 140px;
 }
